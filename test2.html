@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mahu jadi partner saya tak?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 150px;
+      background-color: #ff6b6b;
+    }
+
+    h1 {
+      color: #333;
+      font-family: cursive;
+      border: none;
+      padding-right: 10px;
+    }
+
+    p {
+      color: #ffffff;
+      margin-top: 20px;
+      font-size: 30px;
+      text-align: center;
+      font-family: cursive;
+    }
+
+    button {
+      padding:10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-right: 250px ;
+      padding: 0 auto;
+    }
+
+    #yes-button {
+      background-color: #4CAF50;
+      color: #fff;
+      text-align: center;
+    }
+
+    #no-button {
+      background-color: #f44336;
+      color: #fff;
+      position: absolute;
+      transition: left 0.5s, top 0.5s;
+    }
+  </style>
+  <script>
+    function confess() {
+      alert("Yeaayyy....tq I luv u :)");
+    }
+
+    function moveButton() {
+      var button = document.getElementById('no-button');
+      var windowWidth = window.innerWidth - button.offsetWidth;
+      var windowHeight = window.innerHeight - button.offsetHeight;
+      var left = Math.random() * windowWidth;
+      var top = Math.random() * windowHeight;
+      button.style.left = left + 'px';
+      button.style.top = top + 'px';
+    }
+  </script>
+</head>
+<body>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://media.discordapp.net/attachments/1106426925699829811/1108284838584262717/blush.gif" alt="">
+  <h1>&nbsp;&nbsp;&nbsp;Confession</h1>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saya suka awak, awak suka saya x?</p>
+  <button id="yes-button" onclick="confess()">Yes</button>
+  <button id="no-button" onmouseover="moveButton()">No</button>
+</body>
+</html>
